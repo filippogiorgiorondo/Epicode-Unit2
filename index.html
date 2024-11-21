@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patch Me If You Can - Ethical Hackers</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #00FF00;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 50px;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-top: 40px;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #111;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00FF00;
+            color: #000;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background-color: #33FF33;
+        }
+
+        .hidden-info {
+            display: none;
+            background-color: #222;
+            padding: 10px;
+            border: 2px solid #00FF00;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px 0;
+            background-color: #111;
+            color: #00FF00;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Glitch effect for title */
+        @keyframes glitch {
+            0% {
+                transform: translate(0px, 0px);
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff00ff;
+            }
+            10% {
+                transform: translate(5px, 5px);
+                text-shadow: 0 0 5px #fff, 0 0 15px #ff0000, 0 0 20px #ff00ff;
+            }
+            20% {
+                transform: translate(-5px, -5px);
+                text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 20px #ff00ff;
+            }
+            30% {
+                transform: translate(5px, -5px);
+                text-shadow: 0 0 5px #fff, 0 0 15px #ff0000, 0 0 20px #ff00ff;
+            }
+            40% {
+                transform: translate(-5px, 5px);
+                text-shadow: 0 0 5px #fff, 0 0 15px #ff0000, 0 0 20px #ff00ff;
+            }
+            100% {
+                transform: translate(0px, 0px);
+                text-shadow: 0 0 5px #fff, 0 0 10px #ff0000, 0 0 20px #ff00ff;
+            }
+        }
+
+        .glitch {
+            animation: glitch 1s infinite;
+        }
+
+        .navbar {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #00FF00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .navbar a:hover {
+            color: #33FF33;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">I Nostri Servizi</a>
+        <a href="#">Contatti</a>
+        <a href="#">Blog</a>
+    </div>
+
+    <div class="container">
+        <h1 class="glitch">Patch Me If You Can</h1>
+
+        <p>Benvenuto nel sito di "Patch Me If You Can". Siamo un team di esperti ethical hacker che si occupano di test di penetrazione, ricerca e correzione di vulnerabilità nei sistemi informatici.</p>
+
+        <h2>Perché sceglierci?</h2>
+        <p>Ci sono molte ragioni per cui dovresti scegliere il nostro team di pentesting. Ecco alcuni motivi validi:</p>
+        <ul>
+            <li><strong>Esperienza comprovata:</strong> Abbiamo anni di esperienza nel settore della sicurezza informatica e abbiamo aiutato numerose aziende a proteggere i loro sistemi da attacchi esterni.</li>
+            <li><strong>Metodologie avanzate:</strong> Utilizziamo le tecniche più avanzate di test di penetrazione e simuliamo attacchi reali per scoprire le vulnerabilità più nascoste.</li>
+            <li><strong>Rapporti dettagliati:</strong> Forniamo rapporti dettagliati e facili da capire, che includono tutte le vulnerabilità riscontrate e le raccomandazioni per la loro correzione.</li>
+            <li><strong>Team etico:</strong> Il nostro approccio è etico e professionale: ci impegniamo a rispettare la privacy e la sicurezza di tutti i nostri clienti.</li>
+            <li><strong>Disponibilità 24/7:</strong> Siamo sempre pronti a rispondere alle tue esigenze e a lavorare su progetti urgenti. La sicurezza non ha orari!</li>
+        </ul>
+
+        <h2>I nostri servizi</h2>
+        <ul>
+            <li>Test di Penetrazione Web</li>
+            <li>Audit della Sicurezza Rete</li>
+            <li>Analisi delle Vulnerabilità delle Applicazioni</li>
+            <li>Ricerca di Bug e Exploit</li>
+            <li>Formazione sulla Sicurezza Informatica</li>
+        </ul>
+
+        <h2>Chi Siamo</h2>
+        <p>Patch Me If You Can è un team di specialisti in cybersicurezza. Con anni di esperienza nel campo della sicurezza informatica, il nostro obiettivo è scoprire e correggere vulnerabilità prima che gli attaccanti possano sfruttarle.</p>
+
+        <button class="button" onclick="document.querySelector('.hidden-info').style.display = 'block'">Scopri di più</button>
+
+        <div class="hidden-info">
+            <p>Abbiamo esperienza in numerosi ambiti, inclusi vulnerabilità web, sistemi di crittografia e applicazioni mobili. Se hai bisogno di testare la sicurezza della tua infrastruttura, siamo qui per aiutarti.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Patch Me If You Can. Tutti i diritti riservati.</p>
+    </div>
+
+</body>
+</html>
